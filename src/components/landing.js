@@ -10,6 +10,7 @@ export const Landing = () => {
       <Button variant='primary'>Login Now</Button>
       <Button variant='primary'>Back to Website</Button>
       <DefaultCard />
+      <div>hello</div>
     </Container>
   );
 };
