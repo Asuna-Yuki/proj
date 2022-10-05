@@ -10,7 +10,15 @@ export const Landing = () => {
       <Button variant='primary'>Login Now</Button>
       <Button variant='primary'>Back to Website</Button>
       <DefaultCard />
-      <div>hello</div>
+      <div className='box'>
+        <section className='left'>
+          ahsdfjkadhfjakshfaskdhkjahfjkashjfkas
+        </section>
+        <section className='right'>
+          {" "}
+          fhkjsdhk wjkfhjk sadhfjahsfljkdajfhj
+        </section>
+      </div>
     </Container>
   );
 };
