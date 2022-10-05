@@ -2,23 +2,23 @@ import React from "react";
 
 const VideoPlayer = () => {
   return (
-    <div className="social">
+    <div className="video-player">
       <div className="youtube-player">
         <iframe
-          width="420"
-          height="315"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           title="youtube"
         ></iframe>
       </div>
-      <div className="social-footer">
-        <div className="social-footer-first">
+      <div className="video-player-footer">
+        <div className="video-player-footer-first">
           <i class="fa-solid fa-location-dot" /> Mumbai
         </div>
-        <div className="social-footer-second">
+        <div className="video-player-footer-second">
           <i class="fa-brands fa-chrome" /> lorentx
         </div>
-        <div className="social-footer-third">
+        <div className="video-player-footer-third">
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-instagram"></i>
