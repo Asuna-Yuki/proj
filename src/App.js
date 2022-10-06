@@ -1,12 +1,12 @@
 import "./App.css";
-import { Landing } from "./components/Landing";
+import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Landing />
+      <Home />
     </>
   );
 }
