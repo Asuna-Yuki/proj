@@ -459,17 +459,32 @@ img {
 /* founder card */
 
 .founder-card {
+  font-size: 1.6rem;
   width: 220px;
   max-height: 350px;
   background-color: var(--white);
   display: inline-block;
   padding: 25px 40px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
 }
 
 .founder-card h3 {
   font-size: 1.75rem;
   padding-top: 20px;
+  text-align: center;
+  color: var(--dark-purple);
+  font-weight: 600;
+}
+
+.founder-card h4 {
+  font-size: 1.7rem;
+  color: var(--muted-color);
+  margin-bottom: 10px;
 }
 
 .founder-card-img {
@@ -480,4 +495,35 @@ img {
 .founder {
   display: flex;
   gap: 2em;
+}
+
+/* detail card */
+
+.details-card {
+  background-color: ghostwhite;
+  border-radius: 2px;
+  box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+}
+
+.details-card-third {
+  color: var(--primary-color);
+}
+.details-card-fourth {
+  color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.card-stats h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.card-stats h3 {
+  font-size: 1.2rem;
+  color: var(--muted-color);
+  font-weight: 600;
+  text-transform: uppercase;
 }
