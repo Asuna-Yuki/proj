@@ -3,6 +3,8 @@ import CampaignCard from "./CampaignCard";
 import { DealCard } from "./DealCard";
 import DefaultCard from "./DefaultCard";
 import VideoPlayer from "./VideoPlayer";
+import PitchScreen from "./PitchScreen";
+import DetailsScreen from "./DetailsScreen";
 
 export const Home = () => {
   return (
@@ -15,10 +17,20 @@ export const Home = () => {
         <section className='left'>
           <a href='#'>Unable to view video ? Click here</a>
           <VideoPlayer />
+          <br />
+          <div className='button-selector'>
+            <button className='btn selected'>Pitch</button>
+            <button className='btn'>Details</button>
+            <button className='btn'>Updates</button>
+            <button className='btn'>Comments</button>
+          </div>
+
+          {/* <PitchScreen /> */}
+          <DetailsScreen />
         </section>
         <section className='right'>
           <CampaignCard />
-          {/* <DealCard /> */}
+          <DealCard />
         </section>
       </div>
     </div>

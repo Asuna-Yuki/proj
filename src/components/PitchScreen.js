@@ -2,12 +2,13 @@ import React from "react";
 
 const PitchScreen = () => {
   return (
-    <div className="pitch-card">
-      <div className="pitch-card-header">
+    <div className='card pitch-card'>
+      <div className='pitch-card-header'>
         <h1>Deck</h1>
-        <button>Download pitch</button>
+        <button className='btn btn-pitch'>Download pitch deck</button>
       </div>
-      <div className="pitch-card-body">
+      <hr />
+      <div className='pitch-card-body'>
         <>
           <h3>10 Seconds Pitch</h3>
           <p>
@@ -22,7 +23,7 @@ const PitchScreen = () => {
         </>
         <hr />
         <>
-          <h3>Highlights</h3>
+          <h2>Highlights</h2>
           <ul>
             <li>Running profitable pilot in Bengaluru</li>
             <li>
@@ -41,17 +42,17 @@ const PitchScreen = () => {
         </>
         <hr />
         <>
-          <h3>Traction</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352968445-10.PNG" />
+          <h2>Traction</h2>
+          <img src='https://images.unlayer.com/projects/15608/1651352968445-10.PNG' />
         </>
         <hr />
         <>
-          <h3>Smarter Way To Rent</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352942115-6.png" />
+          <h2>Smarter Way To Rent</h2>
+          <img src='https://images.unlayer.com/projects/15608/1651352942115-6.png' />
         </>
         <hr />
         <>
-          <h3>Customers Want Low Prices</h3>
+          <h2>Customers Want Low Prices</h2>
           <p>
             To get low prices 85% of the consumers check at least 2 data points
             (Source: BCG Consumer Trends). In various sectors information
@@ -62,11 +63,11 @@ const PitchScreen = () => {
             LetzRent, hoping to have a first-mover advantage and dominate the
             market in the coming future.
           </p>
-          <img src="https://images.unlayer.com/projects/15608/1651352925215-3.PNG" />
+          <img src='https://images.unlayer.com/projects/15608/1651352925215-3.PNG' />
         </>
         <hr />
         <>
-          <h3>Single KYC</h3>
+          <h2>Single KYC</h2>
           <p>
             Renting is a KYC dependent process, every time a customer books a
             service from a different service provider he/she will have to get a
@@ -76,17 +77,17 @@ const PitchScreen = () => {
         </>
         <hr />
         <>
-          <h3>Vast Selection</h3>
+          <h2>Vast Selection</h2>
           <p>
             Being an aggregator Letzrent offers more options than category
             leaders.
           </p>
-          <img src="https://images.unlayer.com/projects/15608/1651352918059-2.png" />
+          <img src='https://images.unlayer.com/projects/15608/1651352918059-2.png' />
         </>
         <hr />
         <>
-          <h3>Why Renting?</h3>
-          <ol type="1">
+          <h2>Why Renting?</h2>
+          <ol type='1'>
             <li>
               Demographic Twist: Commitment phobic millennials prefer an asset
               lite life with a bias toward renting rather than buying.
@@ -100,44 +101,44 @@ const PitchScreen = () => {
               of down payment, maintenance, insurance etc.
             </li>
           </ol>
-          <img src="https://images.unlayer.com/projects/15608/1651352954073-8.png" />
+          <img src='https://images.unlayer.com/projects/15608/1651352954073-8.png' />
         </>
         <hr />
         <>
-          <h3>Market Size</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352961142-9.png" />
+          <h2>Market Size</h2>
+          <img src='https://images.unlayer.com/projects/15608/1651352961142-9.png' />
         </>
         <hr />
         <>
-          <h3>Competitors</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352937596-5.PNG" />
+          <h2>Competitors</h2>
+          <img src='https://images.unlayer.com/projects/15608/1651352937596-5.PNG' />
         </>
         <hr />
         <>
-          <h3>Feedback: People love us</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352929580-4.PNG" />
+          <h2>Feedback: People love us</h2>
+          <img src='https://images.unlayer.com/projects/15608/1651352929580-4.PNG' />
         </>
         <hr />
         <>
-          <h3>Future and growth</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352949305-7.png" />
+          <h2>Future and growth</h2>
+          <img src='https://images.unlayer.com/projects/15608/1651352949305-7.png' />
         </>
         <hr />
         <>
-          <h3>Core Team</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352986615-11.png" />
+          <h2>Core Team</h2>
+          <img src='https://images.unlayer.com/projects/15608/1651352986615-11.png' />
         </>
         <hr />
         <>
-          <h3>Documents for Investors</h3>
+          <h2>Documents for Investors</h2>
           <ul>
             <li>
-              <a href="https://www.google.com/search?client=firefox-b-d&q=Due+Diligence+Report">
+              <a href='https://www.google.com/search?client=firefox-b-d&q=Due+Diligence+Report'>
                 Due Diligence Report
               </a>
             </li>
             <li>
-              <a href="https://drive.google.com/file/d/1i02nUH-27EhiROtNlvXOfkPP7iTfwjpw/view">
+              <a href='https://drive.google.com/file/d/1i02nUH-27EhiROtNlvXOfkPP7iTfwjpw/view'>
                 Certificate of Incorporation
               </a>
             </li>

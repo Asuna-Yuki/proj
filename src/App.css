@@ -15,6 +15,7 @@
   --accent-color: #5e72e4;
   --danger-color: #f5365c;
   --muted-color: #8898aa;
+  --dark-purple: #32325d;
   --black: #000;
   --white: #fff;
   font-size: 62.5%;
@@ -70,6 +71,7 @@ li {
   border-radius: 4px;
   border: 1px solid;
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .btn-outline {
@@ -115,6 +117,34 @@ li {
 .campaign-card .btn-danger {
   width: 100%;
   margin-bottom: 10px;
+}
+
+.button-selector .btn {
+  border: none;
+  font-weight: 400;
+  color: var(--primary-color);
+  background-color: var(--white);
+  width: 100%;
+  box-shadow: 0px 3px 15px -10px;
+}
+
+.button-selector {
+  display: flex;
+}
+
+.button-selector .selected {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.btn-pitch {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 0.5em 0.75em;
+  background-color: var(--accent-color);
+  border: var(--accent-color);
+  color: var(--white);
+  margin: 0;
 }
 
 /* navbar */
@@ -207,6 +237,7 @@ img {
   padding: 1.75em 1.75em;
   border-radius: 10px;
   box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+  margin-bottom: 30px;
 }
 
 /* default card */
@@ -342,12 +373,6 @@ img {
 
 /* campaign card */
 
-.campaign-card {
-}
-.campaign-card section {
-  /* background-color: ghostwhite; */
-}
-
 .campaign-card section h1 {
   font-size: 3.6rem;
   font-weight: 600;
@@ -373,4 +398,86 @@ img {
   font-size: 1.4rem;
   text-align: center;
   color: var(--primary-color);
+}
+
+/* pitch card */
+
+.pitch-card {
+  color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.pitch-card hr {
+  margin: 3rem 0;
+}
+
+.pitch-card-header {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.pitch-card-header h1 {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-right: auto;
+}
+
+.pitch-card-body h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.pitch-card-body p {
+  font-size: 1.4rem;
+}
+
+.pitch-card-body h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--dark-purple);
+  /* padding-bottom: 20px; */
+}
+
+.pitch-card-body h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--dark-purple);
+}
+
+.pitch-card-body li {
+  font-size: 1.3rem;
+  font-weight: 400;
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+/* founder card */
+
+.founder-card {
+  width: 220px;
+  max-height: 350px;
+  background-color: var(--white);
+  display: inline-block;
+  padding: 25px 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.founder-card h3 {
+  font-size: 1.75rem;
+  padding-top: 20px;
+}
+
+.founder-card-img {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.founder {
+  display: flex;
+  gap: 2em;
 }
