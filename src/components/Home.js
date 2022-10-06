@@ -1,4 +1,5 @@
 import React from "react";
+import CampaignCard from "./CampaignCard";
 import DefaultCard from "./DefaultCard";
 import VideoPlayer from "./VideoPlayer";
 
@@ -11,11 +12,12 @@ export const Home = () => {
       <DefaultCard />
       <div className='box'>
         <section className='left'>
+          <a href='#'>Unable to view video ? Click here</a>
           <VideoPlayer />
         </section>
         <section className='right'>
           {" "}
-          fhkjsdhk wjkfhjk sadhfjahsfljkdajfhj
+          <CampaignCard />
         </section>
       </div>
     </div>

@@ -13,10 +13,14 @@ const VideoPlayer = () => {
       </div>
       <div className='video-player-footer'>
         <div className='video-player-footer-first'>
-          <i className='fa-solid fa-location-dot' /> Mumbai
+          <a href='#'>
+            <i className='fa-solid fa-location-dot' /> Mumbai
+          </a>
         </div>
         <div className='video-player-footer-second'>
-          <i className='fa-brands fa-chrome' /> lorentx
+          <a href=''>
+            <i className='fa-brands fa-chrome' /> lorentx
+          </a>
         </div>
         <div className='video-player-footer-third'>
           <i className='fa-brands fa-instagram'></i>
