@@ -5,7 +5,7 @@ const DetailsScreen = () => {
   return (
     <div className='details-card'>
       <div className='details-card-header'>
-        Meet our strong and visionary team members
+        <strong>Meet our strong</strong> and visionary team members
       </div>
       <div className='founder'>
         <FounderCard
@@ -30,31 +30,34 @@ const DetailsScreen = () => {
       </div>
       <div className='details-card-fourth'>
         <div className='card card-stats'>
-          <h3>Start Date</h3>
-          <h2>2022-06-26 16:38:05</h2>
+          <section>
+            <div>
+              <h3>Start Date</h3>
+              <h2>2022-06-26 16:38:05</h2>
+            </div>
+            <i className='fa-regular fa-hand-point-up fa-xl' />
+          </section>
           <span>
-            <i className='fa fa-arrow-up' />
-            Ends in
+            <i className='fa fa-arrow-up' /> Ends in
           </span>
-          <span>0 days</span>
-          <div className='card-stats-img'>
-            <i className='fa-regular fa-hand-point-up' />
-          </div>
+          <span> 0 days</span>
         </div>
         <div className='card card-stats'>
-          <h3>Target Raise</h3>
-          <h2>5000000</h2>
-          <span>
-            <i className='fa fa-arrow-up' />
-            0%
-          </span>
-          <span>Raised So far</span>
-          <div className='card-stats-img'>
+          <section>
+            <div>
+              <h3>Target Raise</h3>
+              <h2>5000000</h2>
+            </div>
             <i class='fa-solid fa-chart-pie' />
-          </div>
+          </section>
+
+          <span>
+            <i className='fa fa-arrow-up' /> 0%
+          </span>
+          <span> Raised So far</span>
         </div>
       </div>
-      <div className='details-card-fifth'>
+      <div className='card details-card-fifth'>
         <div className='details-card-fifth-header'>
           <h3>Frequently Asked Question [Found 3]</h3>
         </div>

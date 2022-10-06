@@ -500,9 +500,11 @@ img {
 /* detail card */
 
 .details-card {
-  background-color: ghostwhite;
-  border-radius: 2px;
-  box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+}
+
+.details-card-header {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
 }
 
 .details-card-third {
@@ -526,4 +528,36 @@ img {
   color: var(--muted-color);
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.card-stats section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-stats section div {
+  margin-right: auto;
+}
+
+.fa-hand-point-up {
+}
+
+.details-card-fifth h3 {
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+}
+
+.details-card-fifth h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.details-card-fifth p {
+  color: var(--muted-color);
+  font-weight: 200;
+  margin-bottom: 30px;
+  line-height: 1.75em;
 }
