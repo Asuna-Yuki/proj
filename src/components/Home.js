@@ -6,6 +6,7 @@ import VideoPlayer from "./VideoPlayer";
 import PitchScreen from "./PitchScreen";
 import DetailsScreen from "./DetailsScreen";
 import CommentsScreen from "./CommentsScreen";
+import deals from "./dealsData";
 
 export const Home = () => {
   const [screen, setScreen] = useState(1);
@@ -76,7 +77,9 @@ export const Home = () => {
         </section>
         <section className="right">
           <CampaignCard />
-          <DealCard />
+          {deals.map((x) => (
+            <DealCard value={x} />
+          ))}
         </section>
       </div>
     </div>

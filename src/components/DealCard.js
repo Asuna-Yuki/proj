@@ -1,17 +1,18 @@
-export const DealCard = () => {
+export const DealCard = (props) => {
   return (
-    <div className='card deal-card'>
-      <div className='deal-card-body'>
-        <h1>₹ 2000</h1>
+    <div className="card deal-card">
+      <div className="deal-card-body">
+        <h1>₹ {props.value.price}</h1>
         <h3>Invest</h3>
-        <div className='deal-card-details'>
+        <div className="deal-card-details">
           <ul>
-            <li>LetzRent Premium Apparel (T-shirts & Coffee Mug) </li>
-            <li>Early access to new features & promotions</li>
+            {props.value.text.map((x) => {
+              return <li>{x}</li>;
+            })}
           </ul>
-          <span>TNC : Limited to the first 100</span>
+          <span>TNC : {props.value.tnc}</span>
         </div>
-        <button className='btn btn-muted'>Invest</button>
+        <button className="btn btn-muted">Invest</button>
       </div>
     </div>
   );
