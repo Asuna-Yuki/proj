@@ -579,7 +579,13 @@ img {
   margin-right: auto;
 }
 
-.fa-hand-point-up {
+.card-stats section .btn-social {
+  height: 50px;
+  background-color: var(--danger-color);
+}
+
+.card-stats:nth-child(2) section .btn-social {
+  background-color: rgb(255, 95, 36);
 }
 
 .details-card-fifth h3 {
