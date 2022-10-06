@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CampaignCard from "./CampaignCard";
 import { DealCard } from "./DealCard";
 import DefaultCard from "./DefaultCard";
@@ -10,19 +10,29 @@ import deals from "./dealsData";
 
 export const Home = () => {
   const [screen, setScreen] = useState(1);
+  const [curr, setcurr] = useState(1);
+  // const removeAll = () => {
+  //   // document.getElementsByClassName("btn-1").classList.remove("selected");
+  //   const node = ReactDOM.findDOMNode().getElementsByClassName("btn-1");
+  //   console.log(node);
+  // };
   const screenUpdater = (e) => {
-    console.log(e);
+    e.target.classList.add("selected");
     switch (e.target.name) {
       case "pitch":
+        setcurr(1);
         setScreen(1);
         break;
       case "details":
+        setcurr(2);
         setScreen(2);
         break;
       case "updates":
+        setcurr(3);
         setScreen(3);
         break;
       case "comments":
+        setcurr(4);
         setScreen(4);
         break;
       default:
@@ -38,7 +48,7 @@ export const Home = () => {
       case 3:
         return <></>;
       case 4:
-        return <CommentsScreen />;
+        return <></>;
       default:
         return <PitchScreen />;
     }
@@ -55,24 +65,64 @@ export const Home = () => {
           <VideoPlayer />
           <br />
           <div className="button-selector">
-            <button
-              className="btn selected"
-              name="pitch"
-              onClick={screenUpdater}
-            >
-              Pitch
-            </button>
-            <button className="btn" name="details" onClick={screenUpdater}>
-              Details
-            </button>
-            <button className="btn" name="updates" onClick={screenUpdater}>
-              Updates
-            </button>
-            <button className="btn" name="comments" onClick={screenUpdater}>
-              Comments
-            </button>
+            {curr === 1 ? (
+              <button
+                className="btn selected"
+                name="pitch"
+                onClick={screenUpdater}
+              >
+                {" "}
+                Pitch
+              </button>
+            ) : (
+              <button className="btn" name="pitch" onClick={screenUpdater}>
+                Pitch
+              </button>
+            )}
+            {curr === 2 ? (
+              <button
+                className="btn selected"
+                name="details"
+                onClick={screenUpdater}
+              >
+                Details
+              </button>
+            ) : (
+              <button className="btn" name="details" onClick={screenUpdater}>
+                Details
+              </button>
+            )}
+            {curr === 3 ? (
+              <button
+                className="btn selected"
+                name="updates"
+                onClick={screenUpdater}
+              >
+                Updates
+              </button>
+            ) : (
+              <button className="btn" name="updates" onClick={screenUpdater}>
+                Updates
+              </button>
+            )}
+            {curr === 4 ? (
+              <button
+                className="btn btn-4"
+                name="comments"
+                onClick={screenUpdater}
+              >
+                Comments
+              </button>
+            ) : (
+              <button
+                className="btn btn-4"
+                name="comments"
+                onClick={screenUpdater}
+              >
+                Comments
+              </button>
+            )}
           </div>
-
           {renderSwitch()}
         </section>
         <section className="right">
