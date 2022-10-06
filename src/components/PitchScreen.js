@@ -42,12 +42,18 @@ const PitchScreen = () => {
         <hr />
         <>
           <h3>Traction</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352968445-10.PNG" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352968445-10.PNG"
+            alt="traction"
+          />
         </>
         <hr />
         <>
           <h3>Smarter Way To Rent</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352942115-6.png" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352942115-6.png"
+            alt="text"
+          />
         </>
         <hr />
         <>
@@ -62,7 +68,10 @@ const PitchScreen = () => {
             LetzRent, hoping to have a first-mover advantage and dominate the
             market in the coming future.
           </p>
-          <img src="https://images.unlayer.com/projects/15608/1651352925215-3.PNG" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352925215-3.PNG"
+            alt="text"
+          />
         </>
         <hr />
         <>
@@ -81,7 +90,10 @@ const PitchScreen = () => {
             Being an aggregator Letzrent offers more options than category
             leaders.
           </p>
-          <img src="https://images.unlayer.com/projects/15608/1651352918059-2.png" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352918059-2.png"
+            alt="text"
+          />
         </>
         <hr />
         <>
@@ -100,32 +112,50 @@ const PitchScreen = () => {
               of down payment, maintenance, insurance etc.
             </li>
           </ol>
-          <img src="https://images.unlayer.com/projects/15608/1651352954073-8.png" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352954073-8.png"
+            alt="text"
+          />
         </>
         <hr />
         <>
           <h3>Market Size</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352961142-9.png" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352961142-9.png"
+            alt="text"
+          />
         </>
         <hr />
         <>
           <h3>Competitors</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352937596-5.PNG" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352937596-5.PNG"
+            alt="text"
+          />
         </>
         <hr />
         <>
           <h3>Feedback: People love us</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352929580-4.PNG" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352929580-4.PNG"
+            alt="text"
+          />
         </>
         <hr />
         <>
           <h3>Future and growth</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352949305-7.png" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352949305-7.png"
+            alt="text"
+          />
         </>
         <hr />
         <>
           <h3>Core Team</h3>
-          <img src="https://images.unlayer.com/projects/15608/1651352986615-11.png" />
+          <img
+            src="https://images.unlayer.com/projects/15608/1651352986615-11.png"
+            alt="text"
+          />
         </>
         <hr />
         <>
