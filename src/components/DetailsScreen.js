@@ -35,7 +35,7 @@ const DetailsScreen = () => {
               <h3>Start Date</h3>
               <h2>2022-06-26 16:38:05</h2>
             </div>
-            <div>
+            <div className='btn-social'>
               <i className='fa-regular fa-hand-point-up fa-xl' />
             </div>
           </section>
@@ -50,7 +50,9 @@ const DetailsScreen = () => {
               <h3>Target Raise</h3>
               <h2>5000000</h2>
             </div>
-            <i class='fa-solid fa-chart-pie' />
+            <div className='btn-social'>
+              <i class='fa-solid fa-chart-pie' />
+            </div>
           </section>
 
           <span>
