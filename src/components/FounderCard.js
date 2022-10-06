@@ -10,33 +10,33 @@ const FounderCard = (props) => {
       <h4>CoFounder</h4>
       <div className='founder-card-social'>
         {props.twitter === "None" ? (
-          <div className='btn-twitter'>
+          <div className='btn-social btn-twitter'>
             <i className='fab fa-twitter' />
           </div>
         ) : (
-          <div className='btn-twitter'>
+          <div className='btn-social btn-twitter'>
             <a href={props.twitter}>
               <i className='fab fa-twitter'></i>
             </a>
           </div>
         )}
         {props.facebook === "None" ? (
-          <div>
+          <div className='btn-social btn-facebook'>
             <i className='fab fa-facebook' />
           </div>
         ) : (
-          <div>
+          <div className='btn-social btn-facebook'>
             <a href={props.facebook}>
               <i className='fab fa-facebook' />
             </a>
           </div>
         )}
         {props.linkedin === "None" ? (
-          <div>
+          <div className='btn-social btn-chrome'>
             <i className='fab fa-chrome' />
           </div>
         ) : (
-          <div>
+          <div className='btn-social btn-chrome'>
             <a href={props.linkedin}>
               <i className='fab fa-chrome' />
             </a>

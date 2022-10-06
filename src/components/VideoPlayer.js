@@ -24,8 +24,8 @@ const VideoPlayer = () => {
         </div>
         <div className='video-player-footer-third'>
           <i className='fa-brands fa-instagram'></i>
-          <i className='fa-brands fa-instagram'></i>
-          <i className='fa-brands fa-instagram'></i>
+          <i class='fa-brands fa-facebook'></i>
+          <i class='fa-brands fa-youtube'></i>
         </div>
       </div>
     </div>

@@ -35,7 +35,9 @@ const DetailsScreen = () => {
               <h3>Start Date</h3>
               <h2>2022-06-26 16:38:05</h2>
             </div>
-            <i className='fa-regular fa-hand-point-up fa-xl' />
+            <div>
+              <i className='fa-regular fa-hand-point-up fa-xl' />
+            </div>
           </section>
           <span>
             <i className='fa fa-arrow-up' /> Ends in

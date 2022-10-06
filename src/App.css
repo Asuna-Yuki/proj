@@ -147,10 +147,7 @@ li {
   margin: 0;
 }
 
-.btn-twitter {
-  color: #fff;
-  border-color: #1da1f2;
-  background-color: #1da1f2;
+.btn-social {
   box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
   height: 40px;
   aspect-ratio: 1;
@@ -158,6 +155,27 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-twitter {
+  color: #fff;
+  border-color: #1da1f2;
+  background-color: #1da1f2;
+}
+
+.btn-facebook {
+  color: #fff;
+  border-color: #3b5999;
+  background-color: #3b5999;
+}
+.btn-chrome {
+  color: #fff;
+  border-color: #ea4c89;
+  background-color: #ea4c89;
+}
+
+.btn-social a {
+  color: var(--white);
 }
 
 /* navbar */
@@ -320,7 +338,7 @@ img {
 }
 
 .video-player-footer {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--accent-color);
   flex-basis: 14%;
   display: grid;
@@ -557,7 +575,7 @@ img {
   margin-bottom: 20px;
 }
 
-.card-stats section div {
+.card-stats section div:nth-child(1) {
   margin-right: auto;
 }
 
