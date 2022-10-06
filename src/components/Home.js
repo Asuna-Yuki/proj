@@ -73,8 +73,6 @@ export const Home = () => {
           </div>
 
           {renderSwitch()}
-
-          <DetailsScreen />
         </section>
         <section className="right">
           <CampaignCard />
