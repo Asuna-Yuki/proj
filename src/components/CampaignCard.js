@@ -1,25 +1,28 @@
 const CampaignCard = () => {
   return (
-    <div className="deal-card">
-      <div className="deal-card-first">
-        <h1>0</h1>
-        <p>hello</p>
-      </div>
-      <div className="deal-card-second">
+    <div className='card campaign-card'>
+      <section>
+        <h1>₹0</h1>
+        <h3>0 % of minimum goal raised</h3>
+      </section>
+      <hr />
+      <section>
         <h2>0</h2>
-        <p>hello</p>
-      </div>
-      <div className="deal-card-third">
-        <h2>0</h2>
-        <p>hello</p>
-      </div>
-      <div className="deal-card-fourth">
-        <button>
-          <i className="ni ni-money-coins" />
-          CampaignCard
+        <h3>Total Investors</h3>
+      </section>
+      <hr />
+      <section>
+        <h2>0 Days</h2>
+        <h3>Left to Invest</h3>
+      </section>
+      <hr />
+      <section>
+        <button className='btn btn-danger'>
+          <i className='fa-solid fa-user' />
+          {"   "}Campaign Expired
         </button>
-        <p>hello</p>
-      </div>
+        <p>₹ 1000 Minimum Investment</p>
+      </section>
     </div>
   );
 };
