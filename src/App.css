@@ -5,6 +5,10 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   --primary-color: #525f7f;
@@ -18,19 +22,46 @@
 
 body {
   background-color: #f8f9fe;
+  /* overflow: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  all: unset;
+  font-size: 1rem;
+  display: block;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* overflow: visible; */
+  box-sizing: content-box;
+  height: 0;
 }
 
 .main {
   max-width: 1100px;
   min-height: 100vh;
   margin: auto;
-  padding: 0 4em;
 }
 
 a {
   text-decoration: none;
 }
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
 
+/* buttons */
 .btn {
   font-size: 1.4rem;
   font-weight: 600;
@@ -72,11 +103,26 @@ a {
   border: none;
 }
 
+.btn-muted {
+  width: 100%;
+  color: var(--white);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  opacity: 0.65;
+  margin: 2em 0 0 0;
+}
+
+.campaign-card .btn-danger {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* navbar */
 nav {
   font-size: 1.3rem;
   background-color: var(--accent-color);
   height: 76px;
-  max-width: 75%;
+  max-width: 1150px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -99,9 +145,6 @@ nav ul {
   background-color: antiquewhite;
 }
 
-.container {
-  /* background-color: green; */
-}
 img {
   width: 100%;
   max-height: 100%;
@@ -110,14 +153,63 @@ img {
   height: 100%;
 }
 
-.card-image-container {
-  width: 80px;
-  height: 80px;
-  margin: 2em;
-  overflow: hidden;
-  border-radius: 100%;
+.badge {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5em 0.75em;
 }
 
+.badge-active {
+  border-radius: 7px;
+  background-color: rgb(251, 220, 218);
+}
+
+.box {
+  display: flex;
+  gap: 3em;
+}
+
+@media screen and (max-width: 1100px) {
+  .box {
+    flex-direction: column-reverse;
+  }
+}
+
+.left {
+  flex-basis: 67%;
+  /* background-color: #5e72e4; */
+}
+.left > a {
+  font-size: 1.4rem;
+  color: var(--black);
+  background-color: transparent;
+  padding: 0.5em 0;
+  width: max-content;
+  flex-basis: 2%;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+}
+.left > a:hover {
+  color: var(--accent-color);
+}
+
+.right {
+  flex-basis: 33%;
+  /* background-color: aqua; */
+}
+
+/* Cards */
+
+.card {
+  background-color: var(--white);
+  font-size: 1.6rem;
+  padding: 1.75em 1.75em;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+}
+
+/* default card */
 .default-card {
   /* background-color: lightblue; */
   display: grid;
@@ -131,16 +223,12 @@ img {
   padding: 1em 5em;
 }
 
-.badge {
-  color: var(--black);
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.5em 0.75em;
-}
-
-.badge-active {
-  border-radius: 7px;
-  background-color: rgb(251, 220, 218);
+.card-image-container {
+  width: 80px;
+  height: 80px;
+  margin: 2em;
+  overflow: hidden;
+  border-radius: 100%;
 }
 
 .desc-container {
@@ -173,38 +261,11 @@ img {
   padding: 0.5em 0;
 }
 
-.box {
-  display: flex;
-  gap: 2em;
-}
-
-.left {
-  flex-basis: 70%;
-  /* background-color: #5e72e4; */
-}
-.left > a {
-  font-size: 1.4rem;
-  color: var(--black);
-  background-color: transparent;
-  padding: 0.5em 0;
-  width: max-content;
-  flex-basis: 2%;
-  transition: all 0.3s ease 0s;
-  display: inline-block;
-}
-.left > a:hover {
-  color: var(--accent-color);
-}
-
-.right {
-  flex-basis: 30%;
-  background-color: aqua;
-}
-
+/* video card */
 .video-player {
+  background-color: var(--white);
   box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
   border-radius: 10px;
-  /* background-color: #f5365c; */
   height: 460px;
   overflow: hidden;
   display: flex;
@@ -242,4 +303,74 @@ img {
 }
 .video-player-footer-third i {
   padding: 0 0.2em;
+}
+
+/* deal card */
+.deal-card {
+  background-color: var(--white);
+  font-size: 1.6rem;
+  padding: 1.75em 1.75em;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+}
+
+.deal-card-body h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.deal-card-body h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.deal-card-details {
+  color: #8898aa;
+}
+
+.deal-card-details li {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.deal-card-details span {
+  display: block;
+  margin-top: 20px;
+}
+
+/* campaign card */
+
+.campaign-card {
+}
+.campaign-card section {
+  /* background-color: ghostwhite; */
+}
+
+.campaign-card section h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  padding: 5px 0;
+}
+
+.campaign-card section h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 5px 0;
+}
+
+.campaign-card section h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--black);
+  padding: 5px 0;
+}
+
+.campaign-card section p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--primary-color);
 }

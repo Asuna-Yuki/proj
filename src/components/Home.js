@@ -1,5 +1,6 @@
 import React from "react";
 import CampaignCard from "./CampaignCard";
+import { DealCard } from "./DealCard";
 import DefaultCard from "./DefaultCard";
 import VideoPlayer from "./VideoPlayer";
 
@@ -16,8 +17,8 @@ export const Home = () => {
           <VideoPlayer />
         </section>
         <section className='right'>
-          {" "}
           <CampaignCard />
+          {/* <DealCard /> */}
         </section>
       </div>
     </div>
