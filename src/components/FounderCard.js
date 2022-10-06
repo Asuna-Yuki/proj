@@ -4,7 +4,7 @@ const FounderCard = (props) => {
   return (
     <div className="founder-card">
       <div className="founder-card-img">
-        <img src={props.image} />
+        <img src={props.image} alt="founder-image" />
       </div>
       <h3>{props.name}</h3>
       <h4>CoFounder</h4>
