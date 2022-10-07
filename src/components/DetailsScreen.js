@@ -1,7 +1,7 @@
 import React from "react";
 import FounderCard from "./FounderCard";
 
-const DetailsScreen = () => {
+export const DetailsScreen = () => {
   return (
     <div className='details-card'>
       <div className='details-card-header'>
@@ -100,5 +100,3 @@ const DetailsScreen = () => {
     </div>
   );
 };
-
-export default DetailsScreen;

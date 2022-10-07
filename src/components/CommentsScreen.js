@@ -1,41 +1,41 @@
 import React from "react";
-import CommentCard from "./CommentCard";
+import { CommentCard } from "./CommentCard";
 
-const CommentsScreen = () => {
+export const CommentsScreen = () => {
   const reply = {
     name: "Omkar Darde",
     time: "2022-09-24 14:45:52",
-    text: "hello",
+    text: "jhasdlkjfh",
   };
   return (
-    <div className="comment-card">
-      <div className="comment-card-header">
-        <button>Add Comment</button>
+    <div className='comment-screen'>
+      <div className='comment-screen-header'>
+        <button className='btn btn-outline btn-comment'>Add Comment</button>
       </div>
-      <div className="comment-card-body">
+      <div className='comment-screen-body'>
         <CommentCard
-          name="Omkar Darde"
-          time="2022-09-24 14:49:02"
-          text="fbvefbebefbefbefbefbefbgfbebeefvbeffbevefvfevevefvfevfevvvfebvefbvefefvbefvefvevevefvefv"
+          name='Omkar Darde'
+          time='2022-09-24 14:49:02'
+          text='fbvefbebefbefbefbefbefbgfbebeefvbeffbevefvfevevefvfevfevvvfebvefbvefefvbefvefvevevefvefv'
         />
         <CommentCard
-          name="palash"
-          time="2022-08-28 06:54:14"
-          text="tyyfgh"
+          name='palash'
+          time='2022-08-28 06:54:14'
+          text='tyyfgh'
           reply={reply}
         />
       </div>
-      <div className="comment-card-footer">
+      <div className='card comment-screen-footer'>
         <div>
-          <i className="fas fa-angle-left" />
-        </div>
-        <a href="#!">1</a>
-        <div>
-          <i className="fas fa-angle-right" />
+          <div className='arrow'>
+            <i className='fas fa-angle-left' />
+          </div>
+          <div>1</div>
+          <div className='arrow'>
+            <i className='fas fa-angle-right' />
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default CommentsScreen;

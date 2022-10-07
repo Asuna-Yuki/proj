@@ -1,4 +1,4 @@
-const CampaignCard = () => {
+export const CampaignCard = () => {
   return (
     <div className='card campaign-card'>
       <section>
@@ -26,5 +26,3 @@ const CampaignCard = () => {
     </div>
   );
 };
-
-export default CampaignCard;
